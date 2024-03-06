@@ -45,15 +45,15 @@ export class ContactComponent {
   }
   openWhatsApp() {
     if (this.isWhatsAppSupported()) {
-      window.location.href = "whatsapp://send?phone=9897796387&text=Hi";
+      window.location.href = "whatsapp://send?phone=6396243889&text=Hi";
     } else {
-      window.open("whatsapp://send?phone9897796387&text=Hi", "_blank");
+      window.open("whatsapp://send?phone=6396243889&text=Hi", "_blank");
     }
   }
 
   isWhatsAppSupported(): boolean {
     const link = document.createElement("a");
-    link.href = "whatsapp://send?phone=9897796387&text=Hi";
+    link.href = "whatsapp://send?phone=6396243889&text=Hi";
     return link.protocol === "whatsapp:";
   }
 
