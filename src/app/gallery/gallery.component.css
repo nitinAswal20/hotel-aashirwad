@@ -1,48 +1,54 @@
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-  }
-  
-  /* Hide slides by default */
-  .mySlides {
-    padding: 40px 200px;
-  }
-  .mySlides img {
-    width: 100%; /* Adjust the width as needed */
-    height: 50%; /* Maintain the aspect ratio */
-  }
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Hide slides by default */
+.mySlides,
+.hotelSlides {
+  padding: 40px 10px; /* Adjust padding for smaller screens */
+}
+
+.mySlides img,
+.hotelSlides img {
+  width: 100%; /* Adjust the width to fit the container */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+/* Navigation arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .mySlides,
   .hotelSlides {
-    padding: 40px 200px;
+    padding: 40px 20px; /* Adjust padding for smaller screens */
   }
-  .hotelSlides img {
-    width: 100%; /* Adjust the width as needed */
-    height: 50%; /* Maintain the aspect ratio */
-  }
-  /* Navigation arrows */
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  .rooms {
-    display: flex;
-    justify-content: center;
-  }
-  
+}
