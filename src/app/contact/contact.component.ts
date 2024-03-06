@@ -43,5 +43,18 @@ export class ContactComponent {
     // Open default email client with prefilled email
     window.location.href = mailtoLink;
   }
+  openWhatsApp() {
+    if (this.isWhatsAppSupported()) {
+      window.location.href = "whatsapp://send?text=Hi";
+    } else {
+      window.open("https://web.whatsapp.com/send?text=Hi", "_blank");
+    }
+  }
+
+  isWhatsAppSupported(): boolean {
+    const link = document.createElement("a");
+    link.href = "whatsapp://send?text=test";
+    return link.protocol === "whatsapp:";
+  }
 
 }

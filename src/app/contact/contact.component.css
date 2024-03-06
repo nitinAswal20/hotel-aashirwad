@@ -62,4 +62,22 @@
     margin-top: 20px;
     text-align: center;
   }
+  .whats-app {
+    text-align: center;
+  }
+  
+  .whats-app a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .whats-app img {
+    vertical-align: middle;
+  }
+  
+  .whats-app span {
+    vertical-align: middle;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
   

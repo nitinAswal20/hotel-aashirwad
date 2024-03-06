@@ -28,6 +28,15 @@
       <button type="submit" (click)="submitForm()">Send</button>
     </form>
   </div>
+  <div>
+    <div class="whats-app">
+      <h2> OR </h2>
+      <a href="whatsapp://send?text=Hi" target="_blank" (click)="openWhatsApp()">
+        <img src="../../assets/whatsapp.png" alt="WhatsApp">
+        <span>Message us on WhatsApp</span>
+      </a>
+    </div>
+  </div>
   <div class="contact-details">
     <div class="column">
       <img src="../../assets/address.png" alt="Address">
