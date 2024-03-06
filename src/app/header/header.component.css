@@ -1,43 +1,57 @@
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .white-row {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.white-row {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-width {
+  width: 35%;
+}
+
+.blue-nav {
+  background-color: rgb(245, 195, 176);
+  width: 100%;
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.blue-nav a {
+  color: black;
+  text-decoration: solid;
+  padding: 10px 163px; /* Adjust padding as needed */
+}
+
+.logo_title {
+  color: rgb(226 137 5 / 98%);
+  font-family: serif;
+}
+
+.center-content {
+  display: flex; /* use flexbox */
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center items horizontally */
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
   .image-width {
-    width:35%;
+    width: 70%; /* Adjust width for smaller screens */
   }
   
-  .blue-nav {
-    background-color: rgb(245, 195, 176);
-    width: 100%;
-    padding: 10px 0; /* Adjust padding as needed */
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px; /* Adjust margin as needed */
-  }
   .blue-nav a {
-    color: black;
-    text-decoration:solid;
-    padding: 10px 163px; /* Adjust padding as needed */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
   }
-  .logo_title {
-    color: rgb(226 137 5 / 98%);
-    font-family: serif;
-  }
-  .center-content {
-    display: flex; /* use flexbox */
-    flex-direction: column; /* stack items vertically */
-    align-items: center; /* center items horizontally */
-  }
-  
+}
